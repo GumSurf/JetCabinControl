@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Calendar - JetCabinControl</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/calendar.css">
+    <!-- FullCalendar CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css' rel='stylesheet' />
+</head>
+<body>
+    <header></header>
+
+    <div class="main-container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="../../public/index.html#dashboard">Dashboard</a></li>
+                <li><a href="calendar.html" class="active">Calendar</a></li>
+                <li><a href="#crew">Crew</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Client Calendar</h1>
+            <div id="calendar"></div>
+        </main>
+    </div>
+
+    <footer></footer>
+
+    <!-- FullCalendar JS -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js'></script>
+    <script src="../../public/js/modules/calendar.js"></script>
+    <script src="../../public/js/script.js"></script>
+
+    <!-- Task Modal -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <label for="taskTitle">Task Title:</label>
+                <input type="text" id="taskTitle" required>
+                
+                <label for="taskStart">Start Date:</label>
+                <input type="datetime-local" id="taskStart" required>
+                
+                <label for="taskEnd">End Date:</label>
+                <input type="datetime-local" id="taskEnd" required>
+                
+                <label for="taskAllDay">All Day Event:</label>
+                <input type="checkbox" id="taskAllDay">
+                
+                <button type="button" id="saveTask">Save Task</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
