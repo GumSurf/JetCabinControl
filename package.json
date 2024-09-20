@@ -1,0 +1,21 @@
+{
+    "name": "JetCabinControl",
+    "version": "1.0.0",
+    "description": "A control interface for private jets",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel public/index.html",
+        "build": "parcel build public/index.html"
+    },
+    "author": "Gabriel Christe",
+    "license": "MIT",
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "html-webpack-plugin": "^5.6.0",
+        "parcel": "^2.12.0",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.94.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.1.0"
+    }
+}
